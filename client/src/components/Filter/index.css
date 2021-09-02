@@ -1,0 +1,46 @@
+.filter-modal {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,.7);
+	overflow: auto;
+}
+
+.filter-modal.show {
+	display: block;
+}
+
+.filter-modal__content {
+	display: flex;
+	flex-direction: column;
+	max-width: 300px;
+	margin: 100px auto 50px;
+}
+
+.filter-modal select,
+.filter-modal input,
+.filter-modal button {
+	position: relative;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+	outline: none;
+	cursor: pointer;
+	padding: 12px;
+	border-radius: 2px;
+	border: none;
+	background: #21242d;
+	color: white;
+	margin-bottom: 10px;
+}
+
+.filter-modal input::placeholder {
+  color: white;
+}
+
+.filter-modal button:active {
+	top: 1px;
+}
